@@ -18,9 +18,9 @@
           }, delay);
         });
       };
+      const testTaskQuene = new taskQuene();
 
       document.getElementById('button').onclick = function handleClick() {
-        const testTaskQuene = new taskQuene();
         const task1 = () => task(0, 1000);
         const task2 = () => task(1, 2000);
         const taskId = testTaskQuene.enqueue(task1, task2);

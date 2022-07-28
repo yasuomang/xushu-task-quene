@@ -1,6 +1,5 @@
 # taskQuene 项目
 
-    taskQuene项目
     js异步任务队列
 
 ## Usage
