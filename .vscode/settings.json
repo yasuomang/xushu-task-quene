@@ -1,9 +1,10 @@
 {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": true 
-    },
-    "editor.formatOnSave": true,
-    "eslint.format.enable": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode", 
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true
-  }
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "liveServer.settings.port": 5501
+}
