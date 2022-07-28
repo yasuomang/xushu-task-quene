@@ -36,15 +36,18 @@ export default class taskQuene {
         const res = await currentTasks[i]();
         resultList.push(res);
       }
-      this.taskMap.delete(taskId);
-      this.running = false;
-      if (this.waitTasks.length > 0) {
-        this.waitTasks[0].wait();
-        this.waitTasks.shift();
-      }
+      this.dequene(taskId);
       return Promise.resolve(resultList);
     } catch (error) {
       return Promise.reject(error);
+    }
+  }
+  public dequene(taskId: string) {
+    this.taskMap.delete(taskId);
+    this.running = false;
+    if (this.waitTasks.length > 0) {
+      this.waitTasks[0].wait();
+      this.waitTasks.shift();
     }
   }
 }
